@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "shortselma",
+  "version": "${version}",
+  "name": "ShortSelma",
+  "description": "Selma is short",
+  "authors": [
+    "Secondairy"
+  ],
+  "contact": {
+    "website": "https://api.2econdairy.live",
+    "repo": "https://github.com/Secondairy/ShortSelma"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/shortselma/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "me.secondairy.shortselma.shortselma.client.ShortSelmaClient"
+    ],
+    "main": [
+      "me.secondairy.shortselma.shortselma.ShortSelma"
+    ]
+  },
+  "mixins": [
+    "shortselma.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
